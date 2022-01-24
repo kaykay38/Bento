@@ -6,132 +6,163 @@
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
 
 const CONFIG = {
-  // ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
-  // ├┴┐├─┤└─┐││  └─┐
-  // └─┘┴ ┴└─┘┴└─┘└─┘
+    // ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
+    // ├┴┐├─┤└─┐││  └─┐
+    // └─┘┴ ┴└─┘┴└─┘└─┘
 
-  // General
-  name: 'John',
-  imageBackground: false,
-  openInNewTab: true,
-  twelveHourFormat: false,
+    // General
+    name: 'Mia',
+    imageBackground: false,
+    openInNewTab: true,
+    twelveHourFormat: true,
 
-  // Greetings
-  greetingMorning: 'Good morning!',
-  greetingAfternoon: 'Good afternoon,',
-  greetingEvening: 'Good evening,',
-  greetingNight: 'Go to Sleep!',
+    // Greetings
+    greetingMorning: 'Good morning!',
+    greetingAfternoon: 'Good afternoon,',
+    greetingEvening: 'Good evening,',
+    greetingNight: 'Go to Sleep!',
 
-  // Weather
-  weatherKey: 'InsertYourAPIKeyHere123456',
-  weatherIcons: 'OneDark', // 'Nord', 'Dark', 'White'
-  weatherUnit: 'C', // 'F', 'C'
-  language: 'en', // More languages in https://openweathermap.org/current#multi
+    // Weather
+    weatherKey: CONFIG_PRIVATE.weatherKey,
+    weatherIcons: 'OneDark', // 'Nord', 'Dark', 'White'
+    weatherUnit: 'C', // 'F', 'C'
+    language: 'en', // More languages in https://openweathermap.org/current#multi
 
-  trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-  defaultLatitude: '37.775',
-  defaultLongitude: '-122.419',
+    trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
+    defaultLatitude: CONFIG_PRIVATE.defaultLatitude,
+    defaultLongitude: CONFIG_PRIVATE.defaultLongitude,
 
-  // Autochange
-  autoChangeTheme: true,
+    // ┌─┐┌─┐┬─┐┌┬┐┌─┐
+    // │  ├─┤├┬┘ ││└─┐
+    // └─┘┴ ┴┴└──┴┘└─┘
 
-  // Autochabge by OS
-  changeThemeByOS: false, 
-
-  // Autochange by hour options (24hrs format, string must be in: hh:mm)
-  changeThemeByHour: true,
-  hourDarkThemeActive: '18:30',
-  hourDarkThemeInactive: '07:00',
-
-  // ┌─┐┌─┐┬─┐┌┬┐┌─┐
-  // │  ├─┤├┬┘ ││└─┐
-  // └─┘┴ ┴┴└──┴┘└─┘
-
-  // Links
-  cards: [
-    {
-      id: '1',
-      name: 'Github',
-      icon: 'github',
-      link: 'https://github.com/',
-    },
-    {
-      id: '2',
-      name: 'Mail',
-      icon: 'mail',
-      link: 'https://mail.protonmail.com/',
-    },
-    {
-      id: '3',
-      name: 'Todoist',
-      icon: 'trello',
-      link: 'https://todoist.com',
-    },
-    {
-      id: '4',
-      name: 'Calendar',
-      icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/r',
-    },
-    {
-      id: '5',
-      name: 'Reddit',
-      icon: 'glasses',
-      link: 'https://reddit.com',
-    },
-    {
-      id: '6',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-  ],
-
-  // ┬  ┬┌─┐┌┬┐┌─┐
-  // │  │└─┐ │ └─┐
-  // ┴─┘┴└─┘ ┴ └─┘
-
-  //Icons
-  firstListIcon: 'music',
-  secondListIcon: 'coffee',
-
-  // Links
-  lists: {
-    firstList: [
-      {
-        name: 'Inspirational',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Classic',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Oldies',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
-      {
-        name: 'Rock',
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      },
+    // Links
+    cards: [
+        {
+            id: '1',
+            name: 'Github',
+            icon: 'github',
+            link: 'https://github.com/',
+        },
+        {
+            id: '2',
+            name: 'Outlook',
+            icon: 'mail',
+            link: 'https://outlook.office.com/mail/',
+        },
+        {
+            id: '3',
+            name: 'Gmail',
+            icon: 'mail',
+            link: 'https://mail.google.com/mail/u/0/#inbox',
+        },
+        {
+            id: '4',
+            name: 'Canvas',
+            icon: 'book',
+            link: CONFIG_PRIVATE.canvasLink,
+        },
+        // {
+        //   id: '5',
+        //   name: 'Todoist',
+        //   icon: 'trello',
+        //   link: 'https://todoist.com',
+        // },
+        {
+            id: '5',
+            name: 'Reddit',
+            icon: 'glasses',
+            link: 'https://reddit.com',
+        },
+        {
+            id: '6',
+            name: 'Leetcode',
+            icon: 'code',
+            link: 'https://www.leetcode.com/',
+        },
     ],
-    secondList: [
-      {
-        name: 'Linkedin',
-        link: 'https://linkedin.com/',
-      },
-      {
-        name: 'Figma',
-        link: 'https://figma.com/',
-      },
-      {
-        name: 'Dribbble',
-        link: 'https://dribbble.com',
-      },
-      {
-        name: 'Telegram',
-        link: 'https://webk.telegram.org',
-      },
-    ],
-  },
+
+    // ┬  ┬┌─┐┌┬┐┌─┐
+    // │  │└─┐ │ └─┐
+    // ┴─┘┴└─┘ ┴ └─┘
+
+    //Icons
+    firstListIcon: 'book-open',
+    secondListIcon: 'music',
+
+    // Links
+    lists: {
+        firstList: CONFIG_PRIVATE.lists.firstList,
+
+        secondList: [
+            {
+                name: 'Chill Lofi Beats',
+                link: 'https://www.youtube.com/watch?v=bmVKaAV_7-A', // "chill lofi beats to code/relax to - Joma Tech (YouTube)"
+            },
+            // {
+            //     name: 'Lofi Hip Hop Radio',
+            //     link: 'https://www.youtube.com/watch?v=5qap5aO4i9A', // "lofi hip hop radio"
+            // },
+            {
+                name: 'Deep House',
+                link: 'https://www.youtube.com/playlist?list=PLjzeyhEA84sTk9Ex6zQVTWfVlZv1wtoWe', // "Best Deep House Songs"
+            },
+            {
+                name: 'Kaleo Mix',
+                link: 'https://www.youtube.com/playlist?list=PL5XyW1U-dEyzEixqd1cKVMh6ngWGlzgvX', // "Kaleo Mix"
+            },
+            {
+                name: 'K-Pop 2016-2021',
+                link: 'https://www.youtube.com/playlist?list=PL7uwnIdTDGCz2x4_Ac3D0uESmDd6j2hbs', // "KPop 2016-2021"
+            },
+            {
+                name: 'Instrumental Pop',
+                link: 'https://www.youtube.com/playlist?list=PLsUMoyJKBqcn7dk3jC3i1023Ie-BntpgF', // "Instrumental Pop Covers"
+            },
+            // {
+            //     name: 'Best of The Cranberries',
+            //     link: 'https://www.youtube.com/playlist?list=PLWtysTkuEQDPfEJtInFvAU7zgMiYLXSRq', // "Best of The Cranberries"
+            // },
+            // {
+            //     name: 'Left of the Dial',
+            //     link: 'https://www.youtube.com/playlist?list=RDCLAK5uy_nRpAQskAphL8fHa_DFioLRJ5ddM6NZyF0', // "Left of the Dial"
+            // },
+            // {
+            //     name: 'Pop Music 2021',
+            //     link: 'https://www.youtube.com/playlist?list=PL4o29bINVT4EG_y-k5jGoOu3-Am8Nvi10', // "Pop Music 2021"
+            // },
+            // {
+            //     name: 'The Best Soul Pop Folk',
+            //     link: 'https://www.youtube.com/playlist?list=PLP7qsDncM-OQ65HpJ0GBLE8o6eAv3o4dL', // "The Best Soul Pop Folk"
+            // },
+            // {
+            //     name: 'Leon Bridges Mix',
+            //     link: 'https://www.youtube.com/playlist?list=PLKbTt3Ayv4Qu_j9C_wbuIKf9YQEpng5vz', // "Leon Bridges Mix"
+            // },
+            // {
+            //     name: 'Peach Pit',
+            //     link: 'https://www.youtube.com/playlist?list=PLswusE8BBvbdpXzwdXsm48msEreyJMYef', // "Peach Pit"
+            // },
+            // {
+            //     name: 'Louise the Child',
+            //     link: 'https://www.youtube.com/playlist?list=PLbZrodkh9HEzlx6vhIqsq-pQI0-9D_VzT', // "Louise the Child"
+            // },
+            // {
+            //     name: 'MONSTA X',
+            //     link: 'https://www.youtube.com/playlist?list=PLLsua0MU5Y8I4evYciNkWnb6RW6W-O35h', // "MONSTA X"
+            // },
+            // {
+            //     name: 'Classic',
+            //     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            // },
+            // {
+            //     name: 'Oldies',
+            //     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            // },
+            // {
+            //     name: 'Rock',
+            //     link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            // },
+        ],
+    },
 };
