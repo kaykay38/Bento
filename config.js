@@ -70,15 +70,15 @@ const CONFIG = {
         // },
         {
             id: '5',
-            name: 'Reddit',
-            icon: 'glasses',
-            link: 'https://reddit.com',
-        },
-        {
-            id: '6',
             name: 'Leetcode',
             icon: 'code',
             link: 'https://www.leetcode.com/',
+        },
+        {
+            id: '6',
+            name: 'NCL',
+            icon: 'shield',
+            link: 'https://cyberskyline.com/events/ncl/dashboard/student',
         },
     ],
 
