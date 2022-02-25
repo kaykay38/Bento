@@ -105,7 +105,7 @@ const CONFIG = {
                 link: 'https://canvas.ewu.edu/courses/1532925/pages/cscd496-slash-596-course-schedule',
             },
             {
-                name: 'CSCD387',
+                name: 'CSCD378',
                 link: 'https://canvas.ewu.edu/courses/1532965',
             },
             {
