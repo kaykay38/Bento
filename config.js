@@ -4,7 +4,6 @@
 // ┌─┐┌─┐┌┐┌┌─┐┬┌─┐┬ ┬┬─┐┌─┐┌┬┐┬┌─┐┌┐┌
 // │  │ ││││├┤ ││ ┬│ │├┬┘├─┤ │ ││ ││││
 // └─┘└─┘┘└┘└  ┴└─┘└─┘┴└─┴ ┴ ┴ ┴└─┘┘└┘
-
 const CONFIG = {
     // ┌┐ ┌─┐┌─┐┬┌─┐┌─┐
     // ├┴┐├─┤└─┐││  └─┐
@@ -16,6 +15,10 @@ const CONFIG = {
     openInNewTab: true,
     twelveHourFormat: true,
 
+    // Theme
+    changeThemeByOS: true,
+    autoChangeTheme: true,
+
     // Greetings
     greetingMorning: 'Good morning!',
     greetingAfternoon: 'Good afternoon,',
@@ -23,14 +26,14 @@ const CONFIG = {
     greetingNight: 'Go to Sleep!',
 
     // Weather
-    weatherKey: CONFIG_PRIVATE.weatherKey,
+    weatherKey: '508f969bd84c0f4bb86ab0b8156b883d',
     weatherIcons: 'OneDark', // 'Nord', 'Dark', 'White'
     weatherUnit: 'C', // 'F', 'C'
     language: 'en', // More languages in https://openweathermap.org/current#multi
 
-    trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
-    defaultLatitude: CONFIG_PRIVATE.defaultLatitude,
-    defaultLongitude: CONFIG_PRIVATE.defaultLongitude,
+    trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
+    defaultLatitude: 40.741895,
+    defaultLongitude: -73.989308,
 
     // ┌─┐┌─┐┬─┐┌┬┐┌─┐
     // │  ├─┤├┬┘ ││└─┐
@@ -60,7 +63,7 @@ const CONFIG = {
             id: '4',
             name: 'Canvas',
             icon: 'book',
-            link: CONFIG_PRIVATE.canvasLink,
+            link: 'https://canvas.ewu.edu/calendar#view_name=month',
         },
         // {
         //   id: '5',
@@ -92,7 +95,32 @@ const CONFIG = {
 
     // Links
     lists: {
-        firstList: CONFIG_PRIVATE.lists.firstList,
+        firstList: [
+            {
+                name: 'CSCD320',
+                link: 'https://canvas.ewu.edu/courses/1532961/pages/cscd320-course-schedule',
+            },
+            {
+                name: 'CSCD496',
+                link: 'https://canvas.ewu.edu/courses/1532925/pages/cscd496-slash-596-course-schedule',
+            },
+            {
+                name: 'CSCD387',
+                link: 'https://canvas.ewu.edu/courses/1532965',
+            },
+            {
+                name: 'CSCD488',
+                link: 'https://canvas.ewu.edu/courses/1532968',
+            },
+            {
+                name: 'CSCD488 repo',
+                link: 'https://github.com/kaykay38/hrv-apple-watch-app',
+            },
+            {
+                name: 'CSCD488 todo',
+                link: 'https://ewu-ensemble.monday.com/boards/2305402656'
+            },
+        ],
 
         secondList: [
             {
