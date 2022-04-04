@@ -97,28 +97,24 @@ const CONFIG = {
     lists: {
         firstList: [
             {
-                name: 'CSCD320',
-                link: 'https://canvas.ewu.edu/courses/1532961/pages/cscd320-course-schedule',
+                name: 'CSCD467',
+                link: 'https://canvas.ewu.edu/courses/1562310',
             },
             {
-                name: 'CSCD496',
-                link: 'https://canvas.ewu.edu/courses/1532925/pages/cscd496-slash-596-course-schedule',
+                name: 'CSCD202',
+                link: 'https://canvas.ewu.edu/courses/1562249',
             },
             {
-                name: 'CSCD378',
-                link: 'https://canvas.ewu.edu/courses/1532965',
-            },
-            {
-                name: 'CSCD488',
+                name: 'CSCD490',
                 link: 'https://canvas.ewu.edu/courses/1532968',
             },
             {
-                name: 'CSCD488 repo',
+                name: 'CSCD490 repo',
                 link: 'https://github.com/kaykay38/hrv-apple-watch-app',
             },
             {
-                name: 'CSCD488 todo',
-                link: 'https://ewu-ensemble.monday.com/boards/2305402656'
+                link: 'https://drive.google.com/drive/folders/1RtjXvRX0uOg_8MGetDzE-1dOASd2y8ar',
+                name: 'CSCD490 Folder',
             },
         ],
 
