@@ -106,7 +106,7 @@ const CONFIG = {
             },
             {
                 name: 'CSCD490',
-                link: 'https://canvas.ewu.edu/courses/1532968',
+                link: 'https://canvas.ewu.edu/courses/1562317',
             },
             {
                 name: 'CSCD490 repo',
