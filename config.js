@@ -97,24 +97,16 @@ const CONFIG = {
     lists: {
         firstList: [
             {
-                name: 'CSCD467',
-                link: 'https://canvas.ewu.edu/courses/1562310',
+                name: 'CSCD499',
+                link: 'https://canvas.ewu.edu/courses/1607300',
             },
             {
-                name: 'CSCD202',
-                link: 'https://canvas.ewu.edu/courses/1562249',
+                name: 'AAST315',
+                link: 'https://canvas.ewu.edu/courses/1588996',
             },
             {
-                name: 'CSCD490',
-                link: 'https://canvas.ewu.edu/courses/1562317',
-            },
-            {
-                name: 'CSCD490 repo',
+                name: 'HRV Monitor Repo',
                 link: 'https://github.com/kaykay38/hrv-apple-watch-app',
-            },
-            {
-                link: 'https://drive.google.com/drive/folders/1RtjXvRX0uOg_8MGetDzE-1dOASd2y8ar',
-                name: 'CSCD490 Folder',
             },
         ],
 
