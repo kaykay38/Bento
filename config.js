@@ -97,12 +97,12 @@ const CONFIG = {
     lists: {
         firstList: [
             {
-                name: 'CSCD499',
-                link: 'https://canvas.ewu.edu/courses/1607300',
+                name: 'CSCD430',
+                link: 'https://canvas.ewu.edu/courses/1593971',
             },
             {
-                name: 'AAST315',
-                link: 'https://canvas.ewu.edu/courses/1588996',
+                name: 'AAST220',
+                link: 'https://canvas.ewu.edu/courses/1592967',
             },
             {
                 name: 'HRV Monitor Repo',
