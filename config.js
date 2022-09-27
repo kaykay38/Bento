@@ -101,10 +101,6 @@ const CONFIG = {
                 link: 'https://canvas.ewu.edu/courses/1593971',
             },
             {
-                name: 'AAST220',
-                link: 'https://canvas.ewu.edu/courses/1592967',
-            },
-            {
                 name: 'HRV Monitor Repo',
                 link: 'https://github.com/kaykay38/hrv-apple-watch-app',
             },
